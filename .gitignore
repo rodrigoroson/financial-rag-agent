@@ -1,0 +1,31 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Variables de entorno y secretos (CRÍTICO)
+.env
+.env.local
+
+# Bases de datos y persistencia local
+data/chroma_db/
+*.sqlite3
+
+# Documentos en crudo (opcional: puedes versionar un PDF de muestra pequeño, pero ignora el resto)
+data/raw/*.pdf
+!data/raw/sample_10k.pdf  # Excepción si quieres mantener un archivo de prueba
+
+# Logs dinámicos
+logs/
+*.log
+
+# Archivos de caché de Python y artefactos compilados
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Entornos de desarrollo / IDEs
+.vscode/
+.idea/
+.DS_Store
